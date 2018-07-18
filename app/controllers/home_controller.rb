@@ -6,6 +6,7 @@ class HomeController < ApplicationController
 
   ## 検索画面用
   def search
+    @products = Product.all
   end
 
   ## 商品詳細用

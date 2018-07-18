@@ -14,27 +14,23 @@
 <p align="center"><input type="button" value="検索" onClick="location.href=''">
 </p>
 
+<%# 
+  Productsテーブルから各要素を取り出して表示
+  pro_name: 商品名
+  pro_price: 商品単価
+%>
 <table border="1" width="500" cellspacing="0"align="center" cellpadding="5" bordercolor="black">
-
 <tr>
 <th>商品名</th>
 <th>価格</th>
 <th>詳細</th>
 </tr>
+<% @products.each do |product| %>
 <tr>
-<td>炊飯器</td>
-<td>\14,800</td>
-<td align="center"><form action="shoukai1.html"><input type="submit" value="詳細"></td>
-</tr></form>
-<tr>
-<td>テレビ</td>
-<td>\50.000</td>
-<td align="center"><form action="shoukai2.html"><input type="submit" value="詳細"></td>
-</tr></form>
-<tr>
-<td>パソコン</td>
-<td>\99,800</td>
-<td align="center"><form action="shoukai3.html"><input type="submit" value="詳細"></td>
-</tr></form>
+<td><%= product.pro_name %></td><td> <%= product.pro_price %></td><td align="center"><form action="shoukai1.html"><input type="submit" value="詳細"></form></td>
+</tr>
+<% end %>
+</table>
+
 </body>
 </html>
