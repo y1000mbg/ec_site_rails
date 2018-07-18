@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pro_id: 1
+  pro_name: MyText
+  stock_num: 1
+  pro_price: 1
+  cat_id: 1
+  pro_img: MyText
+  pro_desc: MyText
+
+two:
+  pro_id: 1
+  pro_name: MyText
+  stock_num: 1
+  pro_price: 1
+  cat_id: 1
+  pro_img: MyText
+  pro_desc: MyText
